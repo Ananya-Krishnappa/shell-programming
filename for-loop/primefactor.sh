@@ -1,4 +1,4 @@
-#! /bin/bash -x
+#! /bin/bash 
 num=$1
 for ((i=2; i<=$num; i++))
 do
@@ -7,7 +7,7 @@ do
 		continue;
 	fi
 	isPrime=1
-	for ((j=2; j<$i/2; j++))
+	for ((j=2; j<$i; j++))
 	do
 		if [ $(($i%$j)) -eq 0 ]
 		then
